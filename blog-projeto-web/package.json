@@ -1,0 +1,31 @@
+{
+  "name": "projeto-web",
+  "version": "1.0.0",
+  "description": "Projeto da disciplina Desenvolvimento de Sistemas WEB - 1º Sem 2022",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "fabio furquim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/furquim99/Novo-blog/tree/main"
+  },
+  "homepage": "https://github.com/furquim99/Novo-blog/tree/main",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "@types/mysql": "^2.15.21",
+    "nodemon": "^2.0.16"
+  }
+}

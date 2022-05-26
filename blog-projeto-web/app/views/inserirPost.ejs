@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Blog post</title>
+</head>
+
+<body>
+	<h1>Criar um novo post</h1>
+	<section>
+		<% if(errors) { %>
+			<ul>
+				<% for(let i=0; i < errors.length; i++){ %>
+					<li>
+						<%= errors[i].msg %>
+					</li>
+					<% } %>
+			</ul>
+			<% } %>
+	</section>
+	<form action="/post/salvar" method="post">
+		<input type="text" name="nome" placeholder="Digite seu nome" value=<%= post.nome %>>
+		<input type="text" name="urlfoto" placeholder="Digite a url da foto" value=<%= post.foto %>>
+		<input type="number" name="titulo" placeholder="Digite o titulo" value=<%= post.titulo %>>
+		<input type="text" name="descricao" placeholder="Coloque a descricao" value=<%= post.descricao %>>
+		<input type="submit" value="enviar">
+	</form>
+
+</body>
+
+</html>

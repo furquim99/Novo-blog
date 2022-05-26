@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Blog post</title>
+
+  <!-- Bootstrap -->
+
+  <link href="css/estilo.css" rel="stylesheet">
+  <link href="css/barraCentral.css" rel="stylesheet">
+  <link href="css/footer-navbar.css" rel="stylesheet">
+</head>
+
+<body>
+     
+<div class="principal" >
+  <div class="blogtext" id="alinhar">
+    <h2 >Lista de post</h2>
+  </div>
+ 
+    <div class="table-signin" >
+     <dir class="table-responsive">
+      <table class="table" >
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Foto</th>
+            <th scope="col">Titulo</th>
+            <th scope="col">Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(let i=0; i<dados.length; i++) { %>
+          <tr>
+            <th scope="row"><%= dados[i].nome %></th>
+            <td><img src="<%= dados[i].foto%>" style="width: 100px"</td>
+            <td><%= dados[i].titulo %></td>
+            <td><%= dados[i].descricao %></td>
+            <td></td>
+          </tr>
+          <%}%>
+        </tbody>
+      </table>
+    </dir>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

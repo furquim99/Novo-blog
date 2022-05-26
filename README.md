@@ -5,7 +5,7 @@
  
  
  para incialização do blog, é necessarios os comandos
- 
+ git clone https://github.com/furquim99/Novo-blog
  npm install
  npm audit fix
  npm start

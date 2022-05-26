@@ -9,3 +9,10 @@
  npm install
  npm audit fix
  npm start
+
+
+Para a inicialização do banco basta o comando
+
+create database blog; 
+
+use blog;
